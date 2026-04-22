@@ -1,20 +1,19 @@
 using Soenneker.Fastly.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Fastly.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class FastlyOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class FastlyOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IFastlyOpenApiClientUtil _openapiclientutil;
 
-    public FastlyOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public FastlyOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IFastlyOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
