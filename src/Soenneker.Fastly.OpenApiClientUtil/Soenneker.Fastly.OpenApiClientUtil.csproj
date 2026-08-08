@@ -44,6 +44,6 @@
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="4.0.38" />
         <PackageReference Include="Soenneker.Fastly.HttpClients" Version="4.0.71" />
         <PackageReference Include="Soenneker.Fastly.OpenApiClient" Version="4.0.47" />
-        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.818" />
+        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.819" />
     </ItemGroup>
 </Project>
