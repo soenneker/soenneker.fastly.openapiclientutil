@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Fastly.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides lazy access to a cached Fastly API client.
 /// </summary>
 public interface IFastlyOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Fastly API client, creating it on first use.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The generated Fastly API client.</returns>
     ValueTask<FastlyOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
