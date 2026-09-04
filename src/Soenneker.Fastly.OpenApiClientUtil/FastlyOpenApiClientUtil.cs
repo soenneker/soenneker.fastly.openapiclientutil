@@ -12,6 +12,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Fastly.OpenApiClientUtil;
 
+/// <inheritdoc cref="IFastlyOpenApiClientUtil" />
 public sealed class FastlyOpenApiClientUtil : IFastlyOpenApiClientUtil
 {
     private readonly AsyncSingleton<FastlyOpenApiClient> _client;
