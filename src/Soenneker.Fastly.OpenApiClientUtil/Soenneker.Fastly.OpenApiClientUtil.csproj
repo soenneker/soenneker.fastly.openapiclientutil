@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Fastly.HttpClients" Version="11.0.157" />
+        <PackageReference Include="Soenneker.Fastly.HttpClients" Version="11.0.159" />
         <PackageReference Include="Soenneker.Fastly.OpenApiClient" Version="11.0.99" />
     </ItemGroup>
 </Project>
